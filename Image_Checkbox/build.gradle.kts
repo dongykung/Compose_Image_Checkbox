@@ -35,12 +35,14 @@ android {
         compose = true
     }
 }
+group = "com.github.dongykung"
+version="1.0"
 afterEvaluate{
     publishing{
         publications{
-            create<MavenPublication>("release"){
+            create<MavenPublication>("maven"){
                 groupId = "com.github.dongykung"
-                artifactId="image-checkbox-compose"
+                artifactId="compose-imagecheckbox"
                 version="1.0"
 
                 from(components["release"])
